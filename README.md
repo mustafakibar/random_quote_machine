@@ -4,7 +4,7 @@ React app that displays a random quote and lets the user tweet it, built for the
 
 ## Features
 
-- Fetches a list of quotes from a remote API on load
+- Fetches a list of quotes from the `type.fit` public API on mount.
 - Displays a randomly selected quote and its author each render
 - "Get another quote" button selects and displays a new random quote
 - Twitter intent link lets the user tweet the current quote with hashtags
@@ -12,7 +12,7 @@ React app that displays a random quote and lets the user tweet it, built for the
 
 ## Tech Stack
 
-- React 17 — class component with `forceUpdate`-based re-render
+- Class component; the new-quote button calls `forceUpdate()` to pick a new random quote from already-fetched state.
 - JavaScript
 - Create React App (react-scripts 5)
 
